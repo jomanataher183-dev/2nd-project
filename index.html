@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My First Page - Home</title>
+</head>
+<body>
+
+    <header>
+        <h1>Hello, World!</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="component.html">Component</a>
+        </nav>
+    </header>
+
+<main class="container">
+        
+        <!-- قسم التنبيهات / Alerts -->
+        <section aria-labelledby="alert-heading">
+            <h2 id="alert-heading" class="section-title">Notifications</h2>
+            <div class="alert alert-info" role="status">
+                <strong>Info:</strong> Welcome to our updated component library!
+            </div>
+            <div class="alert alert-success" role="status">
+                <strong>Success:</strong> Your changes have been saved successfully.
+            </div>
+        </section>
+
+        <!-- شبكة العناصر التجاوبية (2 أعمدة للتابلت / 3 أعمدة للكمبيوتر) -->
+        <section aria-labelledby="grid-heading">
+            <h2 id="grid-heading" class="section-title">Responsive Cards Grid</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Card Title 1</h3>
+                    <p>This is a responsive card element adapting seamlessly across screen sizes.</p>
+                </article>
+                <article class="card">
+                    <h3>Card Title 2</h3>
+                    <p>This is a responsive card element adapting seamlessly across screen sizes.</p>
+                </article>
+                <article class="card">
+                    <h3>Card Title 3</h3>
+                    <p>This is a responsive card element adapting seamlessly across screen sizes.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- نموذج الإدخال / Form Elements -->
+        <section aria-labelledby="form-heading">
+            <h2 id="form-heading" class="section-title">Form Components</h2>
+            <form class="custom-form" action="#" method="get">
+                
+                <div class="form-group">
+                    <label for="username">Full Name</label>
+                    <input type="text" id="username" name="username" placeholder="e.g. Jomana Taher" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="user-email">Email Address</label>
+                    <input type="email" id="user-email" name="user-email" placeholder="e.g. user@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="role">Select Role</label>
+                    <select id="role" name="role" required>
+                        <option value="">-- Choose an option --</option>
+                        <option value="developer">Developer</option>
+                        <option value="designer">Designer</option>
+                        <option value="manager">Manager</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Submit Form</button>
+                    <!-- زر فتح الـ Modal باستخدام CSS Pure (:target) -->
+                    <a href="#demo-modal" class="btn btn-secondary">Open Pure CSS Modal</a>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Modal Window (Pure CSS without JS) -->
+    <div id="demo-modal" class="modal-overlay" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+        <div class="modal-content">
+            <h3 id="modal-title">Pure CSS Modal Window</h3>
+            <p>This modal was opened without writing a single line of JavaScript using the CSS <code>:target</code> pseudo-class.</p>
+            <div class="modal-actions">
+                <a href="#" class="btn btn-primary">Close Modal</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Component Library. All rights reserved.</p>
+    </footer>
+
+
+
+
+    
+</body>
+</html>
